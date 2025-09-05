@@ -1,0 +1,171 @@
+/* Define color variables for easy changes */
+:root {
+  --green: #88B04B;
+  --blue: #4F9D9D;
+  --light-blue: #D9F0F0;
+  --white: #ffffff;
+}
+
+/* Set up the basic page styles */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--light-blue);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Make images fit their container */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--green);
+  color: var(--white);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Header background changes on hover */
+header:hover {
+  background-color: #7aa246;
+}
+
+/* Header title styles */
+header h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Header title grows a bit on hover */
+header h1:hover {
+  transform: scale(1.05);
+}
+
+/* Add a leaf emoji before the title */
+header h1::before {
+  content: "🌿";
+}
+
+/* Navigation link styles */
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  margin-left: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Navigation link color changes on hover */
+nav a:hover {
+  color: var(--blue);
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  background-color: var(--blue);
+  color: var(--white);
+  transition: background-color 0.3s ease;
+}
+
+/* Hero background changes on hover */
+.hero:hover {
+  background-color: #448888;
+}
+
+/* Hero heading styles */
+.hero h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Hero paragraph styles */
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* About section styles */
+.about {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: var(--white);
+}
+
+/* About heading styles */
+.about h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--green);
+}
+
+/* About paragraph styles */
+.about p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+}
+
+/* About button styles */
+.about button {
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* About button changes on hover */
+.about button:hover {
+  background-color: #6f8a3c;
+  transform: scale(1.05);
+}
+
+/* Responsive styles for bigger screens */
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  nav a {
+    margin-left: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .about h3 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+  }
+}
